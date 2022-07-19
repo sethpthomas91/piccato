@@ -1,34 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PIC-CAT_O
 
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+Have you ever wondered what you would look like as a cat? Have you also had the desire to make that image into an NFT that you exclusively give to me? Well you have come to the right place. Pic-Cat-O, sounds similar to Picasso, is a web application that leverages machine learning to generate cat photos from user submitted headshots. It then allows the user to either save those locally or generate the photo and leverage the Etherium blockchain to mint a brand new NFT.
+
+This is a project that was created by Scott Plunkett, a senior crafter at 8th Light, as a way for me to learn before I went off to work for my first client. It started on 18 July 2022 and will end on 29 July 2022.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- BUILD STATUS -->
+## Current Build Status
+
+PLACE STATUS BADGE HERE
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+<!-- Built With -->
+### Built With
+
+* [Next.js](https://nextjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Heroku](https://id.heroku.com/)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
 ## Getting Started
 
-First, run the development server:
 
-```bash
+### Prerequisites
+
+In order to run this project you will need to have the latest version of Node.js.
+
+### Installation
+
+1 Clone the repo
+   ```sh
+git@github.com:sethpthomas91/piccato.git
+   ```
+
+2 Navigate to the new directory
+   ```sh
+cd piccato/
+   ```
+
+3 Install the dependencies
+   ```sh
+npm install
+   ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Running the application
+
+1 Navigate to the project directory if you are not there already.
+   ```sh
+cd piccato/
+   ```
+
+2 Start the application
+   ```sh
 npm run dev
-# or
-yarn dev
-```
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3 View the application on your favorite browser
+```sh
+http://localhost:3000
+   ```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+A few notes. You must be connected to the internet to use this application. The database is located on Heroku and will pull data from that source to populate the webpage.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-## Learn More
+### Testing
 
-To learn more about Next.js, take a look at the following resources:
+1 Navigate to the root directory and run
+   ```sh
+npm test
+   ```
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Reflections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+<!-- ACKNOWLEDGMENTS -->
+## Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [sethpthomas91](https://github.com/sethpthomas91)
+* [sethpthomas91](https://github.com/sethpthomas91)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="right">(<a href="#top">back to top</a>)</p>
