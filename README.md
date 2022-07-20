@@ -12,7 +12,7 @@ This is a project that was created by Scott Plunkett, a senior crafter at 8th Li
 <!-- BUILD STATUS -->
 ## Current Build Status
 
-PLACE STATUS BADGE HERE
+[![Node.js CI](https://github.com/sethpthomas91/piccato/actions/workflows/tests.yml/badge.svg)](https://github.com/sethpthomas91/piccato/actions/workflows/tests.yml)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
