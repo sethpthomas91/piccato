@@ -1,0 +1,1 @@
+This tool is used to get photos down to 256 by 256. Place your images into the "original" directory. Run python3 resixze.py. Your photos will be in the resized directory.

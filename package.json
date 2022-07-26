@@ -11,9 +11,13 @@
   },
   "dependencies": {
     "@prisma/client": "^4.1.0",
+    "ml5": "^0.12.2",
     "next": "12.2.2",
+    "p5": "^1.4.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-test-renderer": "^18.2.0",
+    "react-use-downloader": "^1.1.7"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -21,6 +25,7 @@
     "@types/node": "18.0.6",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
+    "@types/react-test-renderer": "^18.0.0",
     "eslint": "8.20.0",
     "eslint-config-next": "12.2.2",
     "jest": "^28.1.3",

@@ -1,0 +1,23 @@
+.container {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 40vw;
+  color: white;
+}
+
+.image {
+  display: flex;
+}
+
+.button {
+  height: 5vw;
+}
+
+.workContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Header from './Header';
 import Footer from './Footer';
 
@@ -12,4 +11,4 @@ const Layout = ({children}:{children: React.ReactNode}) => {
     );
 }
 
-export default Layout
+export default Layout;

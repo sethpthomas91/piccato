@@ -1,11 +1,13 @@
 import React from 'react'
+import dynamic from 'next/dynamic'
 
-const Create: React.FC = props => {
-    return (
-    <div>
-      <h1>This is where users will create images</h1>
-    </div>
-    )
-  }
+const Ml5 = dynamic(() => import('../components/Ml5'), {ssr: false,})
+
+const Create: React.FC = () => {
+  return (
+    <Ml5/>
+  );
+}
   
-  export default Create;
+export default Create;
+  
