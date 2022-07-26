@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<nav
+  className="header"
+>
+  <h1
+    className="title"
+    data-testid="titlePresser"
+    onClick={[Function]}
+  >
+    PIC-CAT-TO
+  </h1>
+  <a
+    data-testid="createPresser"
+    onClick={[Function]}
+  >
+    <img
+      className="icon"
+      src="/create_icon.jpg"
+    />
+  </a>
+</nav>
+`;

@@ -1,10 +1,10 @@
-import Image from 'next/image'
 import Header from './Header';
 import Footer from './Footer';
+import styles from '../styles/layout.module.css'
 
 const Layout = ({children}:{children: React.ReactNode}) => {
     return (
-    <div>
+    <div className={styles.container}>
       <Header/>
       {children}
       <Footer/>
@@ -12,4 +12,4 @@ const Layout = ({children}:{children: React.ReactNode}) => {
     );
 }
 
-export default Layout
+export default Layout;
