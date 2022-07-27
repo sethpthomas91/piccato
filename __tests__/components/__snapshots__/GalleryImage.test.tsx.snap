@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryImage renders correctly 1`] = `
+<div
+  className="container"
+  data-testid="imagePresser"
+  onClick={[Function]}
+>
+  <img
+    className="galleryImg"
+    src="Does not matter"
+  />
+</div>
+`;

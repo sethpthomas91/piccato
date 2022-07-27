@@ -13,11 +13,11 @@ export const generateImageArr = (props:Props) => {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/images/")
-  const data = await res.json()
+  const response = await fetch('http://localhost:3000/api/images/');
+  const data = await response.json();
   return { 
     props: { data },
-  }
+  };
 }
 
 const Home: React.FC<Props> = (props) => {

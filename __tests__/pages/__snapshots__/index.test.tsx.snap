@@ -6,6 +6,7 @@ exports[`Home renders correctly 1`] = `
 >
   <div
     className="container"
+    data-testid="imagePresser"
     onClick={[Function]}
   >
     <img
@@ -15,6 +16,7 @@ exports[`Home renders correctly 1`] = `
   </div>
   <div
     className="container"
+    data-testid="imagePresser"
     onClick={[Function]}
   >
     <img
@@ -24,6 +26,7 @@ exports[`Home renders correctly 1`] = `
   </div>
   <div
     className="container"
+    data-testid="imagePresser"
     onClick={[Function]}
   >
     <img

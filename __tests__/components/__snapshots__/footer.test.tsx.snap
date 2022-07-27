@@ -23,27 +23,3 @@ exports[`Footer renders correctly 1`] = `
   </nav>
 </footer>
 `;
-
-exports[`Header renders correctly 1`] = `
-<footer
-  className="footer"
->
-  <nav>
-    <li
-      className="list"
-    >
-      Legal
-    </li>
-    <li
-      className="list"
-    >
-      About
-    </li>
-    <li
-      className="list"
-    >
-      Etc.
-    </li>
-  </nav>
-</footer>
-`;

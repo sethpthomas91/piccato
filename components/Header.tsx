@@ -1,6 +1,5 @@
 import styles from '../styles/header.module.css';
 import Router from 'next/router';
-import Image from 'next/image';
 import Head from 'next/head'
 
 const Header = () => {
@@ -16,8 +15,8 @@ const Header = () => {
         onClick={() => Router.push('/')}>
           PIC-CAT-TO
       </h1>
-      <a onClick={() => Router.push('/create/')}>
-        <Image src='/create_icon.jpg' height='80px' width='80px'/>
+      <a data-testid="createPresser" onClick={() => Router.push('/create/').then(()=>{Router.reload()})}>
+        <img className={styles.icon} src='/create_icon.jpg'/>
       </a>
     </nav>
   );

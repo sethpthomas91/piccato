@@ -5,7 +5,6 @@ import styles from '../../styles/detail.module.css'
 
 const ImageDetail: React.FC<GalleryImageProps> = props => {
     const { name, url} = props
-    console.log(props)
     return (
     <div className={styles.container}>
       <div>
@@ -17,13 +16,13 @@ const ImageDetail: React.FC<GalleryImageProps> = props => {
       </div>
     </div>
     )
-  }
-  
+}
+
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const res = await fetch(`http://localhost:3000/api/images/${context.params.id}`)
   const data = await res.json()
   return { props: { ...data } }
 }
   
-  export default ImageDetail;
+export default ImageDetail;
   
