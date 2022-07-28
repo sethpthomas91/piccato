@@ -7,7 +7,6 @@ exports[`ImageDetail renders correctly 1`] = `
   <div>
     <img
       height="256"
-      src="some website"
       width="256"
     />
   </div>
@@ -19,8 +18,10 @@ exports[`ImageDetail renders correctly 1`] = `
       This does not matter
     </h2>
     <h2>
+      Description: 
+    </h2>
+    <h2>
       Location: 
-      some website
     </h2>
   </div>
 </div>
