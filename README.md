@@ -35,7 +35,7 @@ This is a project that was created by Scott Plunkett, a senior crafter at 8th Li
 
 ### Prerequisites
 
-In order to run this project you will need to have the latest version of Node.js.
+[Node 18.6.0](https://nodejs.org/en/download/current/)
 
 ### Installation
 
@@ -92,7 +92,6 @@ npm test
 <!-- ACKNOWLEDGMENTS -->
 ## Contributors
 
-* [sethpthomas91](https://github.com/sethpthomas91)
 * [sethpthomas91](https://github.com/sethpthomas91)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 3vw;
+    background-color: #000000;
+    border-top: 2vw solid #FFFFFF;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    padding: 5px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
