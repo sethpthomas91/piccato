@@ -22,11 +22,11 @@ export const getMetaDataUri = (nftObject) => {
   return nftObject.metadata_uri;
 }
 
-export const filterMetadataUri = (metadataUri) => {
+export const filterMetadataUri = (metadataUri: string) => {
   return metadataUri.slice(7, (metadataUri.length + 1));
 }
 
-export const createActualUri = (filteredMetadataUri) => {
+export const createActualUri = (filteredMetadataUri: string) => {
   return "https://ipfs.io/ipfs/" + filteredMetadataUri;
 }
 

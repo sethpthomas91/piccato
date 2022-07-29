@@ -7,8 +7,13 @@ import {
   createActualUri,
   nftResponseToImgData,
   getIFPSImageData,
-  mergeData
+  mergeData,
 } from '../../handlers/NFTPortHandlers';
+import type { NextApiRequest, NextApiResponse } from 'next';
+import { createMocks, RequestMethod } from 'node-mocks-http';
+import { mintNFT } from '../../handlers/NFTPortHandlers';
+import { blob } from 'stream/consumers';
+
 
 describe ('NFTPortHandler', () => {
 
@@ -108,20 +113,6 @@ describe ('NFTPortHandler', () => {
   })
 
   it('returns a complete nft object with name, description, img url, and mint_date when data_merge is called', () => {
-    const mockIFPSImageData = {
-      name: "testName",
-      description: "test desc",
-      image: "www.imagelocation.com"
-    };
-    
-    const finalNftObj = mergeData(mockNftObject, mockIFPSImageData);
-    expect(finalNftObj.name).toBe("testName");
-    expect(finalNftObj.description).toBe("test desc");
-    expect(finalNftObj.src).toBe("www.imagelocation.com");
-    expect(finalNftObj.minted_date).toBe("2021-08-23T17:25:03.501703");
-  });
-
-  it('makes an api call to mint an nft when mintNFT is called', () => {
     const mockIFPSImageData = {
       name: "testName",
       description: "test desc",
