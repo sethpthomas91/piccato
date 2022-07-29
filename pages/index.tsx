@@ -1,22 +1,23 @@
-import styles from '../styles/gallery.module.css'
-import { GetServerSideProps } from 'next'
+import styles from '../styles/gallery.module.css';
+import { GetServerSideProps } from 'next';
 import GalleryImage, { GalleryImageProps } from '../components/GalleryImage'
+import { getAllNFTs, nftResponseToImgData } from '../handlers/NFTPortHandlers';
 
 type Props = {
-  data: GalleryImageProps[];
+  nftDataArr: GalleryImageProps[];
 }
 
-export const generateImageArr = (props:Props) => {
-  return (props.data.map(image => (
-    <GalleryImage key={image.id} image={image}/>
+export const generateImageArr = (props: Props) => {
+  return (props.nftDataArr.map((nft, index) => (
+    <GalleryImage key={index} mint_date={nft.mint_date} uri={nft.uri} metadata_id={nft.metadata_id}/>
   )))
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const response = await fetch('http://localhost:3000/api/images/');
-  const data = await response.json();
+  const nftResponse = await getAllNFTs();
+  const nftDataArr = nftResponseToImgData(nftResponse.data);
   return { 
-    props: { data },
+    props: { nftDataArr },
   };
 }
 
@@ -30,4 +31,4 @@ const Home: React.FC<Props> = (props) => {
   )
 }
 
-export default Home
+export default Home;

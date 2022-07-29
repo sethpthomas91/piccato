@@ -8,31 +8,16 @@ exports[`Home renders correctly 1`] = `
     className="container"
     data-testid="imagePresser"
     onClick={[Function]}
-  >
-    <img
-      className="galleryImg"
-      src="some website"
-    />
-  </div>
+  />
   <div
     className="container"
     data-testid="imagePresser"
     onClick={[Function]}
-  >
-    <img
-      className="galleryImg"
-      src="some website"
-    />
-  </div>
+  />
   <div
     className="container"
     data-testid="imagePresser"
     onClick={[Function]}
-  >
-    <img
-      className="galleryImg"
-      src="some website"
-    />
-  </div>
+  />
 </main>
 `;

@@ -5,10 +5,5 @@ exports[`GalleryImage renders correctly 1`] = `
   className="container"
   data-testid="imagePresser"
   onClick={[Function]}
->
-  <img
-    className="galleryImg"
-    src="Does not matter"
-  />
-</div>
+/>
 `;
