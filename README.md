@@ -63,12 +63,7 @@ npm install
 cd piccato/
    ```
 
-2 Create a file called .env.local.js
-```sh
-touch .env.local.js
-   ```
-
-3 Copy and paste the following object in your new file:
+2 Copy and paste the following object in your new file:
 
 ```
 const localConfig = {
@@ -78,14 +73,14 @@ const localConfig = {
 export default localConfig;
 ```
 
-4 Change the values in the object with your own secret keys that you generated in the installation section.
+3 Change the values in the object with your own secret keys that you generated in the installation section.
 
-5 Start the application
+4 Start the application
    ```sh
 npm run dev
    ```
 
-6 View the application on your favorite browser
+5 View the application on your favorite browser
 ```sh
 http://localhost:3000
    ```
