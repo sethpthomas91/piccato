@@ -16,18 +16,14 @@ This is a project that was created by Scott Plunkett, a senior crafter at 8th Li
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
 <!-- Built With -->
 ### Built With
 
 * [Next.js](https://nextjs.org/)
 * [TypeScript](https://www.typescriptlang.org/)
-* [PostgreSQL](https://www.postgresql.org/)
-* [Heroku](https://id.heroku.com/)
+* [NFTPort](https://www.nftport.xyz/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -36,6 +32,10 @@ This is a project that was created by Scott Plunkett, a senior crafter at 8th Li
 ### Prerequisites
 
 [Node 18.6.0](https://nodejs.org/en/download/current/)
+
+You will need to generate an NFTPort API Key and Ethereum wallet ID in order to generate your own NFTs. Follow the instructions under Easy Minting here:
+https://docs.nftport.xyz/docs/nftport/ZG9jOjE3NDI3MDc3-minting-quickstart#easy-minting
+
 
 ### Installation
 
@@ -63,18 +63,32 @@ npm install
 cd piccato/
    ```
 
-2 Start the application
+2 Create a file called .env.local.js
+```sh
+touch .env.local.js
+   ```
+
+3 Copy and paste the following object in your new file:
+
+```
+const localConfig = {
+    NFTPORT_KEY: 'SECRET KEY FROM NFT PORT GOES HERE',
+    WALLET_ADDRESS: 'WALLET ADDRESS GOES HERE'
+};
+export default localConfig;
+```
+
+4 Change the values in the object with your own secret keys that you generated in the installation section.
+
+5 Start the application
    ```sh
 npm run dev
    ```
 
-3 View the application on your favorite browser
+6 View the application on your favorite browser
 ```sh
 http://localhost:3000
    ```
-
-A few notes. You must be connected to the internet to use this application. The database is located on Heroku and will pull data from that source to populate the webpage.
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -92,6 +106,7 @@ npm test
 <!-- ACKNOWLEDGMENTS -->
 ## Contributors
 
+* [sethpthomas91](https://github.com/sethpthomas91)
 * [sethpthomas91](https://github.com/sethpthomas91)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
